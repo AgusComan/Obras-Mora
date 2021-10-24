@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    h3 {
+        text-align: center;
+        padding: 50px 0px;
+        text-decoration: underline;
+    }
+}
+
+.titulo_general{
+    background-image: url(../imagenes/pared_recortada_.jpg);
+    .titulo_texto{
+        font-size: 70px;
+        font-family: 'Zen Tokyo Zoo', cursive;
+        color: white;
+        text-align: center;
+        padding: 4rem;
+    }
+}
+
+
+/*------HEADER-------*/
+
+.encabezado {
+   background-color: white;
+   box-shadow: 0 0 10px black;
+   position: relative;
+    .encabezado__logo {
+        width: 50px;
+        margin-left: 50px;
+    }
+
+    .encabezado__menuNav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        .menu__secciones {
+            transition: all .3s;
+        }
+
+        a:hover {
+            background-color: #F0F0F0;
+            border-radius: 10px;
+            transform: scale(1.2, 1.2);
+        }
+    }
+}
+
+/*------FOOTER-------*/
+.footer {
+    background-color: #F0F0F0;
+    border-top: black solid 4px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    justify-content: space-around;
+
+    .footer__logo {
+        padding: 20px;
+
+        .logo__a {
+            .a__img {
+                width: 80px;
+                padding-top: 30px;
+            }
+        }
+    }
+
+    .footer__menu {
+        .menu_navegacion {
+            list-style-type: none;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .menu_lista {
+                padding: 10px;
+                text-align: center;
+
+                .lista__texto {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.derechos {
+    background-color: #F0F0F0;
+    text-align: center;
+    height: 100%;
+    margin: 0px;
+}

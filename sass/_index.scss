@@ -1,0 +1,55 @@
+/*------SECTION INDEX--------*/
+.inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    img{
+        height: 90vh;
+        width: 10wh;
+        border-bottom-left-radius: 650px;
+    }
+    .inicio_texto{
+        font-size: 100px;
+        font-family: 'Zen Tokyo Zoo', cursive;
+        text-align: center;
+        margin-right: 25px;
+        --animate-duration: 1s;
+    }
+}
+
+.intro {
+    .intro__Texto {
+        text-align: center;
+        padding: 100px 110px 20px 110px;
+        --animate-duration: 3s;
+    }
+}
+
+/*----SECTION CASAS-----*/
+
+.section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    --animate-duration: 3s;
+
+    .sectionCasas__contenedor {
+        .contenedor__columnas {
+            transition: all 1s;
+            .linkeo{
+                .columnas__casa{
+                    transition: all 1s;
+                    .texto_card{
+                        text-decoration: underline white;
+                        color: black;
+                    }
+                }
+                .columnas__casa:hover {
+                    box-shadow: slategray 3px 3px;
+                    transform: scale(1.1, 1.1);
+                }
+            }
+        }
+    }
+}
+
