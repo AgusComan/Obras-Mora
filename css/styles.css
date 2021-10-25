@@ -547,7 +547,6 @@ html h3 {
     font-family: 'Zen Tokyo Zoo', cursive;
     text-align: center;
     margin-top: 2rem;
-    margin-right: 25px;
     --animate-duration: 1s;
   }
   .intro .intro__Texto {
