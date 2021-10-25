@@ -60,9 +60,10 @@ html {
     background-color: white;
     box-shadow: 0 0 10px black;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
+    width: 100%;
 
     .footer__logo {
         padding: 20px;

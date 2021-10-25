@@ -72,11 +72,16 @@ html h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .footer .footer__logo {
@@ -303,30 +308,78 @@ html h3 {
 }
 
 /* Galeria Casa Vallejos*/
-.galeriaCasaVallejos {
+.seccion_casavallejos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 50px;
+  margin: 10rem 0 5rem 0;
 }
 
-.galeriaCasaVallejos div img {
-  width: 300px;
+.seccion_casavallejos .vallejos_texto {
+  padding: 3rem 0 5rem 0;
+  border-radius: 19px;
+  background: #dedede;
+  -webkit-box-shadow: 7px 7px 2px #bdbdbd, -7px -7px 2px #ffffff;
+          box-shadow: 7px 7px 2px #bdbdbd, -7px -7px 2px #ffffff;
 }
 
-.galeriaCasaVallejos div img {
-  -webkit-transition: all 1s;
-  transition: all 1s;
+.seccion_casavallejos .vallejos_texto p {
+  padding: 0 1rem;
 }
 
-.galeriaCasaVallejos div :hover {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+.seccion_casavallejos .contenedor_imagenes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: .5rem;
+}
+
+.seccion_casavallejos .contenedor_imagenes .imagenes img {
+  width: 25rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.seccion_casavallejos .contenedor_imagenes .imagenes img:hover {
+  opacity: 0.7;
+}
+
+/*CASA SULMAN*/
+.seccion_sulman {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 5rem 5rem 5rem;
+  gap: 5rem;
+}
+
+.seccion_sulman .sulman_texto {
+  border-radius: 19px;
+  background: #dedede;
+  -webkit-box-shadow: 7px 7px 2px #bdbdbd, -7px -7px 2px #ffffff;
+          box-shadow: 7px 7px 2px #bdbdbd, -7px -7px 2px #ffffff;
+  padding: 5rem 1rem 5rem 1rem;
 }
 
 /*------SECTION EMPRESA---------*/

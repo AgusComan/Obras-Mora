@@ -33,23 +33,58 @@
     }
 }
 
+
 /* Galeria Casa Vallejos*/
-.galeriaCasaVallejos {
+
+.seccion_casavallejos{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 50px;
-    
+    margin: 10rem 0 5rem 0;
+    .vallejos_texto{
+        padding: 3rem 0 5rem 0;
+        border-radius: 19px;
+        background: #dedede;
+        box-shadow:  7px 7px 2px #bdbdbd,
+                    -7px -7px 2px #ffffff;
+        
+        p{
+            padding: 0 1rem;
+        }
+    }
+
+    .contenedor_imagenes{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: .5rem;
+        .imagenes{
+            img{
+                width: 25rem;
+                transition: all .2s;
+            }
+            img:hover{
+                opacity: 0.7;
+            }
+        }
+    }
 }
 
-.galeriaCasaVallejos div img {
-    width: 300px;
-}
 
-.galeriaCasaVallejos div img {
-    transition: all 1s;
-}
-
-.galeriaCasaVallejos div :hover {
-    transform: scale(1.10, 1.10);
+/*CASA SULMAN*/
+.seccion_sulman{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 5rem 5rem 5rem;
+    gap: 5rem;
+    .sulman_texto{
+        border-radius: 19px;
+        background: #dedede;
+        box-shadow:  7px 7px 2px #bdbdbd,
+                    -7px -7px 2px #ffffff;
+        padding: 5rem 1rem 5rem 1rem;
+    }
 }
