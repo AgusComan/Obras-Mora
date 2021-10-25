@@ -23,6 +23,7 @@
             font-size: 7rem;
             font-family: 'Zen Tokyo Zoo', cursive;
             text-align: center;
+            margin-top: 2rem;
             margin-right: 25px;
             --animate-duration: 1s;
         }
@@ -38,18 +39,69 @@
     }
 
     /*TRABAJOS RESPONSIVE*/
-    .galeriaCasaVallejos {
+    .seccion_casaurquiza{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        padding-bottom: 50px;
-        gap: 20px;
+        margin: 5rem 0;
+        .texto_contenedor{
+            padding: 0;
+            width: 90vw;
+            margin-bottom: 2.5rem;
+        }
+        .carrusel_contenedor{
+            width: 90vw;
+            text-align: center;
+        }
+    }
+
+    .seccion_casavallejos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem;
+        .contenedor_imagenes{
+            display: grid;
+            grid-template-columns: repeat(1 , 1fr);
+            grid-template-rows: repeat(4 , 1fr);
+            gap: .5rem;
+        }
+    }
+
+
+    .seccion_sulman{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        .sulman_texto{
+            padding: 1rem ;
+        }
+        .carrusel_contenedor{
+            width: 90vw;
+        }
     }
 }
 
 @media (max-width: 1000px){
+
+    /*header*/
+    a:hover {
+        background-color: #F0F0F0;
+    }
+
+    /*index*/
+    .inicio_imagen{
+        display: none;
+    }
+
+    /* FOOOTER RESPONSIVE*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     /*TRABAJOS RESPONSIVE*/
     .galeriaCasaUrquiza{
         display: flex;
@@ -65,22 +117,17 @@
 @media (max-width: 768px) {
 
     /*INICIO*/
-    .cajasInicio {
+
+    /*MENU FOOTER*/
+    .lista_footer{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-    }
-
-    .caja {
-        margin-bottom: 50px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0;
+        .lista_items{
+            padding: 0;
+        }
     }
 
     /*EMPRESA*/

@@ -44,13 +44,11 @@ html {
         width: 100%;
 
         .menu__secciones {
-            transition: all .3s;
+            transition: all .2s;
         }
 
         a:hover {
-            background-color: #F0F0F0;
-            border-radius: 10px;
-            transform: scale(1.2, 1.2);
+           box-shadow: 0 2px gray;
         }
     }
 }
@@ -79,12 +77,12 @@ html {
     .lista_footer{
         display: flex;
         flex-direction: row;
-        justify-content: baseline;
+        justify-content: center;
         align-items: center;
         
         .lista_items{
             list-style-type: none;
-            padding: 1rem;
+            padding: .5rem;
             a{
                 text-decoration: none;
                 color: black;
